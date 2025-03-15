@@ -9,7 +9,7 @@ interface CodeBlockProps {
   language: string
 }
 
-export function CodeBlock({ code, language }: CodeBlockProps) {
+export function CodeBlock({ code }: CodeBlockProps) {
   const [copied, setCopied] = useState(false)
 
   const copyToClipboard = () => {
